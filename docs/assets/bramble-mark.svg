@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t">
+<title id="t">Bramble</title>
+<defs><radialGradient id="gRipe" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#C6BAFF"/><stop offset=".45" stop-color="#7052EA"/><stop offset="1" stop-color="#301D8C"/></radialGradient></defs>
+<path d="M128,70C128,42 148,24 180,17" fill="none" stroke="#5F9079" stroke-width="9" stroke-linecap="round"/>
+<path d="M-4.2,-1Q-3.6,4.6 -6.4,9.6Q1,6.4 4.6,-1Z" fill="#E7A56B" transform="translate(147.5,30.9) rotate(-37) scale(2.3,-2.3)"/>
+<g transform="translate(128,62) scale(3.5)">
+<g id="berry"><g fill="#1E1257"><circle cx="-13.3" cy="9.5" r="8.4"/><circle cx="0" cy="9.5" r="8.4"/><circle cx="13.3" cy="9.5" r="8.4"/><circle cx="-19.9" cy="21" r="8.4"/><circle cx="-6.6" cy="21" r="8.4"/><circle cx="6.6" cy="21" r="8.4"/><circle cx="19.9" cy="21" r="8.4"/><circle cx="-13.3" cy="32.5" r="8.4"/><circle cx="0" cy="32.5" r="8.4"/><circle cx="13.3" cy="32.5" r="8.4"/><circle cx="-6.6" cy="44.1" r="8.4"/><circle cx="6.6" cy="44.1" r="8.4"/></g>
+<g fill="url(#gRipe)" stroke="#1E1257" stroke-width="1.1"><circle cx="-13.3" cy="9.5" r="7"/><circle cx="0" cy="9.5" r="7"/><circle cx="13.3" cy="9.5" r="7"/><circle cx="-19.9" cy="21" r="7"/><circle cx="-6.6" cy="21" r="7"/><circle cx="6.6" cy="21" r="7"/><circle cx="19.9" cy="21" r="7"/><circle cx="-13.3" cy="32.5" r="7"/><circle cx="0" cy="32.5" r="7"/><circle cx="13.3" cy="32.5" r="7"/><circle cx="-6.6" cy="44.1" r="7"/><circle cx="6.6" cy="44.1" r="7"/></g>
+<g fill="#fff" opacity="0.58"><circle cx="-15.5" cy="7" r="1.4"/><circle cx="-2.2" cy="7" r="1.4"/><circle cx="11.1" cy="7" r="1.4"/><circle cx="-22.2" cy="18.5" r="1.4"/><circle cx="-8.9" cy="18.5" r="1.4"/><circle cx="4.4" cy="18.5" r="1.4"/><circle cx="17.7" cy="18.5" r="1.4"/><circle cx="-15.5" cy="30" r="1.4"/><circle cx="-2.2" cy="30" r="1.4"/><circle cx="11.1" cy="30" r="1.4"/><circle cx="-8.9" cy="41.5" r="1.4"/><circle cx="4.4" cy="41.5" r="1.4"/></g>
+<g fill="#5B937A"><path d="M0,0Q5,-3.4 11,0Q5,3.4 0,0Z" transform="translate(0,3.5) rotate(168)"/><path d="M0,0Q5,-3.4 11,0Q5,3.4 0,0Z" transform="translate(0,3.5) rotate(212)"/><path d="M0,0Q5,-3.4 11,0Q5,3.4 0,0Z" transform="translate(0,3.5) rotate(270)"/><path d="M0,0Q5,-3.4 11,0Q5,3.4 0,0Z" transform="translate(0,3.5) rotate(328)"/><path d="M0,0Q5,-3.4 11,0Q5,3.4 0,0Z" transform="translate(0,3.5) rotate(12)"/></g></g>
+</g>
+</svg>

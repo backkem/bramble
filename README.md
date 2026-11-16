@@ -1,6 +1,11 @@
-![Bramble](docs/assets/bramble-hero-placeholder.png)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/bramble-banner-dark.svg">
+    <img src="docs/assets/bramble-banner-light.svg" alt="Bramble: arching bramble canes whose blackberries are the nodes of a compute mesh" width="100%">
+  </picture>
+</p>
 
-# Bramble 🌿
+# Bramble
 
 **A zero-config, patchwork personal compute mesh.**
 
