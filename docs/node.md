@@ -12,7 +12,7 @@ One static binary on any existing Linux. A bootable image comes later. Rust is t
 | Links | mDNS discovery, mutually authenticated QUIC | Open Screen Protocol (openscreen-rs as a starting point) |
 | Gossip | Membership, health, desired state | New, written against simulation-friendly runtime traits |
 | Store | Independent disks, replicated objects, S3 API | See [storage.md](storage.md) |
-| Host | Wasmtime, one virtual network per app | WASMNet |
+| Host | Wasmtime, one virtual network per app | [wasmnet](https://github.com/backkem/wasmnet) |
 | Reconciler | Runs whatever desired state assigns to this node | New |
 | Gateway | Serves the dashboard, routes HTTP to apps | New |
 
@@ -33,7 +33,7 @@ A ladder, because LP2P and Local HTTPS are not in browsers yet.
 
 ## Later
 
-- **Browser tab or phone as a node:** component host and network stack in a tab, a data channel or WebTransport as the link, a service worker mapping fetches onto mesh sockets.
+- **Browser tab or phone as a node:** component host and network stack in a tab, a data channel or WebTransport as the link, a service worker mapping fetches onto mesh sockets. Prior art: [wasmnet](https://github.com/backkem/wasmnet) already runs its network in a tab, and [codelib-web](https://github.com/backkem/codelib/tree/main/web) hosts components in a Worker.
 - **Phone as witness:** a vote-only member for two-node meshes (see [coordination.md](coordination.md)).
 - **Multi-hop overlay:** open whether identity-addressed streams are enough or an IP overlay with a routing protocol is needed.
 - **Passkey as the owner credential.**

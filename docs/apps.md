@@ -38,7 +38,7 @@ Components, buckets needed, routes, required capabilities (GPU, a radio), config
 - **No central catalogue.** An app is an object in a bucket and can be handed device to device.
 - **Cooldown plus capability diff.** Hold updates for some days; auto-apply only if imports are unchanged.
 - **Independent rebuilds.** A portable artifact lets several parties rebuild and attest to the same hash.
-- **Ship source where possible.** For scripted apps: a pinned engine component plus readable source.
+- **Ship source where possible.** For scripted apps: a pinned engine component plus readable source. [codelib](https://github.com/backkem/codelib) has this shape today: a JavaScript engine component pinned by hash, scripts that reach only allowlisted hosts, credentials attached on the host side.
 - **Compilers as components.** Same output hash in every household, so hashes can be cross-checked.
 
 ## Verifiable builds and review (speculative)

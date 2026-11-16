@@ -20,6 +20,8 @@ No cloud dependencies. No YAML hell. No central master nodes. Just throw your bo
 >
 > It represents an exploration into the endgame of personal infrastructure and digital sovereignty. To see the foundational primitives and philosophy that lead to this concept, check out previous experiments in browser-based, local-first computing: the [Local Peer-to-Peer API](https://github.com/WICG/local-peer-to-peer), [go-lp2p](https://github.com/backkem/go-lp2p), [SETTLE](https://github.com/michaelrsweet/settle), the [Open Screen Protocol](https://github.com/w3c/openscreenprotocol), and [CodeCAD](https://github.com/backkem/codecad). Adjacent non-browser prior art is worth studying too: notably [Matter](https://github.com/backkem/matter), whose [mDNS discovery](https://github.com/pion/mdns) and [PAKE secure channels](https://github.com/backkem/spake2-go) [overlap](https://github.com/w3c/openscreenprotocol/issues/308) with these web standards.
 >
+> Some of the building blocks already exist as standalone libraries (see [Related Work](#related-work)), and the current thinking is written up in the [design notes](docs/README.md).
+>
 > Have thoughts on the design? Come poke holes in it over in [Discussions](https://github.com/backkem/bramble/discussions).
 
 ## The Ethos
@@ -67,6 +69,12 @@ For the engineers wanting to look under the hood, Bramble aggressively cannibali
 *   **Compute:** Industry-standard WebAssembly (WASM) runtimes (Bytecode Alliance compatible) providing secure, sandboxed execution.
 *   **Orchestration:** Lightweight, distributed scheduling inspired by clustering APIs (like K3s), but backed by partition-tolerant data structures (CRDTs/gossip).
 *   **Networking:** Seamless P2P routing and browser-to-mesh standards (like the [Local Peer-to-Peer API](https://github.com/WICG/local-peer-to-peer) and [WebRTC](https://github.com/pion/webrtc)) for native ingress.
+
+## Related Work
+Bramble has no runtime yet, but some of the pieces it would stand on are already open source as standalone libraries. Each one also runs in a browser tab.
+*   **[wasmnet](https://github.com/backkem/wasmnet):** A deterministic virtual IP network made of WebAssembly components. Real protocols on real frames, on virtual time, in one process. The basis for giving each app its own network, and for testing a whole mesh without a desk full of boxes. ([demo](https://backkem.github.io/wasmnet/))
+*   **[wasmshim](https://github.com/backkem/wasmshim):** A Linux userspace personality on an emulated AArch64 CPU, packaged as a WebAssembly component. Unmodified Linux binaries, no kernel, wherever components run. ([demo](https://backkem.github.io/wasmshim/))
+*   **[codelib](https://github.com/backkem/codelib):** Sandboxed JavaScript on WebAssembly, with allowlisted egress and credentials that never leave the host. A working example of the narrow grants Bramble apps would get. ([demo](https://backkem.github.io/codelib/))
 
 ## Contribute
 If you want to help build the infrastructure for the post-scarcity homestead, PRs are welcome. We value simplicity, offline-first reliability, and code that doesn't wake us up at 3 AM.

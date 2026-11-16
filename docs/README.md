@@ -33,3 +33,13 @@ A mesh version of unRAID: the same forgiving, appliance-like experience, spread 
 | [apps.md](apps.md) | App platform, supply chain, distribution |
 | [simulation.md](simulation.md) | Deterministic testing at two levels |
 | [roadmap.md](roadmap.md) | Stages, experiments, open questions |
+
+## Related work
+
+Standalone libraries, already open source, that cover pieces of this design. None of them is Bramble.
+
+| Library | What it is | Where it shows up |
+|---|---|---|
+| [wasmnet](https://github.com/backkem/wasmnet) | Deterministic virtual IP network made of Wasm components, on virtual time | One virtual network per app ([node.md](node.md)); system-level simulator ([simulation.md](simulation.md)) |
+| [wasmshim](https://github.com/backkem/wasmshim) | Linux userspace personality on an emulated AArch64 CPU, as a Wasm component | Real Linux software inside the simulator ([simulation.md](simulation.md)) |
+| [codelib](https://github.com/backkem/codelib) | Sandboxed JavaScript on Wasm, with allowlisted egress and host-held credentials | Scripted apps as a pinned engine plus readable source ([apps.md](apps.md)) |
